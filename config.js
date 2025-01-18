@@ -5,7 +5,7 @@ function convertToBool(text, fault = 'true') {
     return text === fault ? true : false;
 }
 module.exports = {
-SESSION_ID: process.env.SESSION_ID || " SESSION ID ",
+SESSION_ID: process.env.SESSION_ID || "pG9lEShY#b6tzGlP2xptfQEidH8F3CMZqzmovMDW7fGH5-TYbH9U",
 ALIVE_IMG: process.env.ALIVE_IMG || "https://i.ibb.co/dD9q5Wm/46c9a5400387bdbe.jpg",
 ALIVE_MSG: process.env.ALIVE_MSG || "┏━━━━━━━━━━━➤◍◉➤\n│ *🔰𝐇𝐞𝐲 𝐈'𝐦 ᒪOᐯEᖇ-X-ᗰᗪ ᗷOT 𝐁𝐨𝐭⚡*\n┗━━━━━━━━━━━━━━━━━━━━\n━➤◍◉➤\n┏━━━━━━━━━━━➤◍◉➤\n│ *🔔𝐈'𝐦 𝐀𝐥𝐢𝐯𝐞 𝐍𝐨𝐰❤️*\n┗━━━━━━━━━━\n━➤◍◉➤\n┏━━━━━━━━━━━➤◍◉➤\n│ *⚖️𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐁𝐲 - : ᒪOᐯEᖇ-X-ᗰᗪ ᗷOT 𝐓𝐞𝐜𝐡𝐧𝐨𝐥𝐨𝐠𝐲|*\n┗━━━━━━━━━━━━━━━━━━━━\n*2024🤍*\n\n┏━━━━━━━━━━━➤◍◉➤\n*This bot is made by LOVER-X-MD technology.This is made with using Ai.You can use this bot easily.New updates will coming*\n┗━━━━━━━━━━━━━━━━━━━━\n\n🔰❤️ *join with us.....* 🔰❤️\n",
 AUTO_READ_STATUS: process.env.AUTO_READ_STATUS || "true",
