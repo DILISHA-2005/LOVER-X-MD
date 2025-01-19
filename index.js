@@ -1,127 +1,301 @@
-{
-  "name": "LOVER-X-MD",
-  "version": "1.0.0",
-  "description": "A WhatsApp bot created using Node.js",
-  "main": "index.js",
-  "scripts": {
-    "start": "pm2 start index.js --deep-monitoring --attach --name LOVER-X-MD",
-    "stop": "pm2 stop LOVER-X-MD",
-    "restart": "pm2 restart LOVER-X-MD"
-  },
-"dependencies": {
-        "@adiwajshing/keyed-db": "^0.2.4",
-        "@black-king/temp-mail-gen": "1.0.1",
-        "@blackamda/song_video_dl": "1.1.0",
-        "@blackamda/telegram-image-url": "^1.0.0",
-        "@bochilteam/scraper": "4.2.4",
-        "@bochilteam/scraper-sosmed": "1.0.5",
-        "@danitech/scraper": "1.0.7",
-        "@ffmpeg-installer/ffmpeg": "^1.1.0",
-        "@google/generative-ai": "0.17.1",
-        "@saipulanuar/scraper": "3.0.0",
-        "@sasmeee/wabetainfo": "1.1.1",
-        "@sl-code-lords/esana-news": "1.0.3",
-        "@sl-code-lords/image-library": "1.0.0",
-        "@sl-code-lords/movie-dl": "1.1.0",
-        "@sl-code-lords/photooxy": "1.0.1",
-        "@sl-code-lords/si-subdl": "1.1.1",
-        "@sl-code-lords/wabetainfo": "1.2.0",
-        "@tobyg74/tiktok-api-dl": "1.0.13",
-        "@dark-yasiya/yt-dl.js":"latest", 
-        "@vitalets/google-translate-api": "9.2.0",
-        "@whiskeysockets/baileys": "git+https://github.com/prabathLK/Baileys-6.0.0.git#master",
-        "api-dylux": "latest",
-        "aptoide-scraper": "1.0.1",
-        "awesome-phonenumber": "7.2.0",
-        "axios": "^1.7.8",
-        "bard-ai": "2.0.3",
-        "betabotz-tools": "0.0.6",
-        "btch-downloader": "2.3.1-alpha",
-        "buffer": "6.0.3",
-        "buffer-url": "1.0.0",
-        "cc-suite": "1.0.5",
-        "chart.js": "^4.4.0",
-        "chatgpt-scraper": "^1.0.1",
-        "cheerio": "^1.0.0-rc.12",
-        "crypto-digest-sync": "^1.0.0",
-        "crypto-js": "latest",
-        "dandi-api": "1.2.0",
-        "emoji-api": "3.0.1",
-        "emoji-mixer": "1.0.33",
-        "express": "latest",
-        "extract-zip": "2.0.1",
-        "fb-info-video": "1.0.2",
-        "ffmpeg": "^0.0.4",
-        "file_size_url": "^1.0.4",
-        "file-type": "^16.5.3",
-        "fluent-ffmpeg": "^2.1.2",
-        "form-data": "^4.0.0",
-        "fouadwa-scraper": "2.0.0",
-        "fraction.js": "^4.3.7",
-        "fs-extra": "^11.1.0",
-        "g4f": "1.4.6",
-        "gemini-ai": "latest",
-        "getscreenshot.js": "1.0.0",
-        "gms-mobile-news": "1.0.0",
-        "google-image-sr": "^1.0.0",
-        "google-it": "^1.6.4",
-        "google-tts-api": "^2.0.2",
-        "human-readable":"0.2.1", 
-        "imaginesdk": "latest",
-        "imgur": "latest",
-        "is-standard-emoji": "1.0.0",
-        "jimp": "0.16.1",
-        "jspdf": "^2.5.1",
-        "lodash": "^4.17.21",
-        "mathjs": "^12.0.0",
-        "mathsteps": "^0.2.0",
-        "megajs": "1.3.4",
-        "mfiredlcore-vihangayt": "^1.0.0",
-        "mime-types": "2.1.35",
-        "nima-wabeta-info": "1.0.5",
-        "node-fetch": "^2.6.1",
-        "pastebin-js": "latest",
-        "path": "^0.12.7",
-        "pino": "^9.5.0",
-        "pm2": "^5.4.3",
-        "PRABATH-MD": "file:",
-        "qr-image": "3.2.0",
-        "qrcode": "1.5.3",
-        "qrcode-terminal": "^0.12.0",
-        "qs": "^6.10.1",
-        "remove-bg-node": "1.0.3",
-        "ruhend-scraper":"8.0.7", 
-        "Sachibot-Spotifydl": "git+https://github.com/AlenVelocity/spotifydl-core.git",
-        "scr-emoji": "0.0.3",
-        "seedr": "^1.1.2",
-        "simple-git": "3.22.0",
-        "sinhala-cricket-newsjs": "1.0.0",
-        "sinhala-unicode": "2.0.0",
-        "tesseract.js": "2.0.1",
-        "tiktokdl": "0.0.4",
-        "translatte": "^3.0.1",
-        "turndown": "7.1.3",
-        "unzipper": "0.12.2",
-        "util": "^0.12.5",
-        "vihangayt-fbdl": "1.0.2",
-        "vm": "^0.1.0",
-        "wa_set_pkg": "1.0.5",
-        "wa-sticker-formatter": "^4.4.4",
-        "webtorrent": "2.5.1",
-        "xvideos-scraper": "1.0.4",
-        "youtubedl-core": "4.11.7",
-        "ytdl-mp3": "3.4.0",
-        "ytdl-secktor": "latest",
-        "ytmp3-scrap":"1.0.0",
-        "bing-translate-api":"4.0.2", 
-        "ruhend-scraper" : "8.0.3",
-        "dark-yasiya-sinhalasub.lk": "1.0.1",
-        "moment-timezone": "^0.5.43",
-        "mfiredlcore-vihangayt": "^1.0.0",
-        "ytsearch-venom": "1.0.0",
-        "yt-search": "2.12.1", 
-        "@mrnima/tiktok-downloader":"1.0.0",
-        "@mrnima/facebook-downloader":"1.0.0",
-        "mrnima-moviedl":"1.0.0"
-    }
+const {
+default: makeWASocket,
+useMultiFileAuthState,
+DisconnectReason,
+jidNormalizedUser,
+getContentType,
+fetchLatestBaileysVersion,
+Browsers
+} = require('@whiskeysockets/baileys')
+
+const { getBuffer, getGroupAdmins, getRandom, h2k, isUrl, Json, runtime, sleep, fetchJson } = require('./lib/functions')
+const fs = require('fs')
+const P = require('pino')
+const config = require('./config')
+const qrcode = require('qrcode-terminal')
+const util = require('util')
+const { sms,downloadMediaMessage } = require('./lib/msg')
+const axios = require('axios')
+const { File } = require('megajs')
+const prefix = '.'
+
+const ownerNumber = ['94771098429']
+
+//===================SESSION-AUTH============================
+if (!fs.existsSync(__dirname + '/auth_info_baileys/creds.json')) {
+if(!config.SESSION_ID) return console.log('Please add your session to SESSION_ID env !!')
+const sessdata = config.SESSION_ID
+const filer = File.fromURL(`https://mega.nz/file/${sessdata}`)
+filer.download((err, data) => {
+if(err) throw err
+fs.writeFile(__dirname + '/auth_info_baileys/creds.json', data, () => {
+console.log("LOVER-X-MD Session downloaded ✅")
+})})}
+
+const express = require("express");
+const app = express();
+const port = process.env.PORT || 8000;
+
+//=============================================
+
+async function connectToWA() {
+console.log("Connecting LOVER-X-MD 🧬...");
+const { state, saveCreds } = await useMultiFileAuthState(__dirname + '/auth_info_baileys/')
+var { version } = await fetchLatestBaileysVersion()
+
+const conn = makeWASocket({
+        logger: P({ level: 'silent' }),
+        printQRInTerminal: false,
+        browser: Browsers.macOS("Firefox"),
+        syncFullHistory: true,
+        auth: state,
+        version
+        })
+    
+conn.ev.on('connection.update', (update) => {
+const { connection, lastDisconnect } = update
+if (connection === 'close') {
+if (lastDisconnect.error.output.statusCode !== DisconnectReason.loggedOut) {
+connectToWA()
 }
+} else if (connection === 'open') {
+console.log('Avishka_X-MD Is Installing... ')
+const path = require('path');
+fs.readdirSync("./plugins/").forEach((plugin) => {
+if (path.extname(plugin).toLowerCase() == ".js") {
+require("./plugins/" + plugin);
+}
+});
+console.log('Plugins installed successful 🔌')
+console.log('LOVER-X-MD connected to whatsapp ✅')
+
+let up = `
+🚀 **LOVER-X-MD Connected Successfully!** ✅ 
+
+--- **🎉 Welcome to LOVER-X-MD!** 🎉 
+
+**🔹 PREFIX:** ${prefix}
+
+**🔹 OWNER:**  ${ownerNumber}
+
+--- Thank you for using **LOVER-X-MD**. 
+We're here to make your experience enjoyable and seamless. 
+If you need any help or have questions, don't hesitate to ask. 
+
+**Enjoy your time with us!** 😊
+> POWERED BY DILISHA GIMSHAN `;
+
+conn.sendMessage(config.BOT_NUMBER + "@s.whatsapp.net", { image: { url: `https://i.ibb.co/dD9q5Wm/46c9a5400387bdbe.jpg` }, caption: up })
+
+}
+})
+conn.ev.on('creds.update', saveCreds)  
+
+conn.ev.on('messages.upsert', async(mek) => {
+mek = mek.messages[0]
+if (!mek.message) return	
+mek.message = (getContentType(mek.message) === 'ephemeralMessage') ? mek.message.ephemeralMessage.message : mek.message
+if (mek.key && mek.key.remoteJid === 'status@broadcast' && config.AUTO_READ_STATUS === "true"){
+await conn.readMessages([mek.key])
+}
+const m = sms(conn, mek)
+const type = getContentType(mek.message)
+const content = JSON.stringify(mek.message)
+const from = mek.key.remoteJid
+        if (config.ALWAYS_RECORDING === "true") {
+            await conn.sendPresenceUpdate('recording', from)
+        }
+const quoted = type == 'extendedTextMessage' && mek.message.extendedTextMessage.contextInfo != null ? mek.message.extendedTextMessage.contextInfo.quotedMessage || [] : []
+const body = (type === 'conversation') ? mek.message.conversation : (type === 'extendedTextMessage') ? mek.message.extendedTextMessage.text : (type == 'imageMessage') && mek.message.imageMessage.caption ? mek.message.imageMessage.caption : (type == 'videoMessage') && mek.message.videoMessage.caption ? mek.message.videoMessage.caption : ''
+const isCmd = body.startsWith(prefix)
+const command = isCmd ? body.slice(prefix.length).trim().split(' ').shift().toLowerCase() : ''
+const args = body.trim().split(/ +/).slice(1)
+const q = args.join(' ')
+const isGroup = from.endsWith('@g.us')
+const sender = mek.key.fromMe ? (conn.user.id.split(':')[0]+'@s.whatsapp.net' || conn.user.id) : (mek.key.participant || mek.key.remoteJid)
+const senderNumber = sender.split('@')[0]
+const botNumber = conn.user.id.split(':')[0]
+const pushname = mek.pushName || 'Sin Nombre'
+const isMe = botNumber.includes(senderNumber)
+const isOwner = ownerNumber.includes(senderNumber) || isMe
+const botNumber2 = await jidNormalizedUser(conn.user.id);
+const groupMetadata = isGroup ? await conn.groupMetadata(from).catch(e => {}) : ''
+const groupName = isGroup ? groupMetadata.subject : ''
+const participants = isGroup ? await groupMetadata.participants : ''
+const groupAdmins = isGroup ? await getGroupAdmins(participants) : ''
+const isBotAdmins = isGroup ? groupAdmins.includes(botNumber2) : false
+const isAdmins = isGroup ? groupAdmins.includes(sender) : false
+const isReact = m.message.reactionMessage ? true : false
+const reply = (teks) => {
+conn.sendMessage(from, { text: teks }, { quoted: mek })
+}
+
+conn.sendFileUrl = async (jid, url, caption, quoted, options = {}) => {
+              let mime = '';
+              let res = await axios.head(url)
+              mime = res.headers['content-type']
+              if (mime.split("/")[1] === "gif") {
+                return conn.sendMessage(jid, { video: await getBuffer(url), caption: caption, gifPlayback: true, ...options }, { quoted: quoted, ...options })
+              }
+              let type = mime.split("/")[0] + "Message"
+              if (mime === "application/pdf") {
+                return conn.sendMessage(jid, { document: await getBuffer(url), mimetype: 'application/pdf', caption: caption, ...options }, { quoted: quoted, ...options })
+              }
+              if (mime.split("/")[0] === "image") {
+                return conn.sendMessage(jid, { image: await getBuffer(url), caption: caption, ...options }, { quoted: quoted, ...options })
+              }
+              if (mime.split("/")[0] === "video") {
+                return conn.sendMessage(jid, { video: await getBuffer(url), caption: caption, mimetype: 'video/mp4', ...options }, { quoted: quoted, ...options })
+              }
+              if (mime.split("/")[0] === "audio") {
+                return conn.sendMessage(jid, { audio: await getBuffer(url), caption: caption, mimetype: 'audio/mpeg', ...options }, { quoted: quoted, ...options })
+              }
+            }
+ 
+//==============================//
+if (isCmd && config.READ_CMD === "true") {
+              await conn.readMessages([mek.key])  // Mark command as read
+          }
+if(!isOwner && config.MODE === "private") return
+if(!isOwner && isGroup && config.MODE === "inbox") return
+if(!isOwner && !isGroup && config.MODE === "groups") return
+
+//=====================✓
+if (config.AUTO_VOICE === 'true') {
+const url = 'https://raw.githubusercontent.com/AKTP-BOT/voice5/refs/heads/main/voice-raw/Akv5'
+let { data } = await axios.get(url)
+for (vr in data){
+if((new RegExp(`\\b${vr}\\b`,'gi')).test(body)) conn.sendMessage(from,{audio: { url : data[vr]},mimetype: 'audio/mpeg',ptt:true},{quoted:mek})   
+}}
+//=============================//
+if (config.ANTI_LINK == "true"){
+        if (!isOwner ) {   
+        if (body.match(`whatsapp.com`)) {
+            
+        if (isMe) return await reply("Link Derect but I cant Delete link")
+        if(groupAdmins.includes(sender)) return
+            let repoInfo = `👉 Link Detected LOVER-X-MD 👈`;
+        await conn.sendMessage(from, { text: repoInfo }, { quoted: mek });  
+        }}}
+if (config.ANTI_LINK == "true"){
+        if (!isOwner ) {   
+        if (body.match(`youtube.com`)) {
+            
+        if (isMe) return await reply("Link Derect but I cant Delete link")
+        if(groupAdmins.includes(sender)) return
+            let repoInfo = `👉 *Link Detected by LOVER-X-MD* 👈\n⚠️❗ *Anti link on....* ⚠️❗`;
+        await conn.sendMessage(from, { text: repoInfo }, { quoted: mek });  
+        }}}
+if (config.ANTI_BAD == "true"){
+        if (!isOwner ) {   
+        if (body.match(`Hutto`)) {
+            
+        if (isMe) return await reply("Link Derect but I cant Delete link")
+        if(groupAdmins.includes(sender)) return
+            let ak = `⚠️❗ *Don't use bad word* ⚠️❗`;
+        await conn.sendMessage(from, { text: ak }, { quoted: mek });  
+        }}}
+if (config.ANTI_BAD == "true"){
+        if (!isOwner ) {   
+        if (body.match(`Ponnaya`)) {
+            
+        if (isMe) return await reply("Link Derect but I cant Delete link")
+        if(groupAdmins.includes(sender)) return
+            let repoInfo = `⚠️❗ *Don't use bad word* ⚠️❗`;
+        await conn.sendMessage(from, { text: repoInfo }, { quoted: mek });  
+        }}}
+if (config.ANTI_BAD == "true"){
+        if (!isOwner ) {   
+        if (body.match(`Pako`)) {
+            
+        if (isMe) return await reply("Link Derect but I cant Delete link")
+        if(groupAdmins.includes(sender)) return
+            let repoInfo = `⚠️❗ *Don't use bad word* ⚠️❗`;
+        await conn.sendMessage(from, { text: repoInfo }, { quoted: mek });  
+        }}}
+if (config.ANTI_BAD == "true"){
+        if (!isOwner ) {   
+        if (body.match(`Pakaya`)) {
+            
+        if (isMe) return await reply("Link Derect but I cant Delete link")
+        if(groupAdmins.includes(sender)) return
+            let repoInfo = `⚠️❗ *Don't use bad word* ⚠️❗`;
+        await conn.sendMessage(from, { text: repoInfo }, { quoted: mek });  
+        }}}
+if (config.ANTI_BAD == "true"){
+        if (!isOwner ) {   
+        if (body.match(`Kari`)) {
+            
+        if (isMe) return await reply("Link Derect but I cant Delete link")
+        if(groupAdmins.includes(sender)) return
+            let repoInfo = `⚠️❗ *Don't use bad word* ⚠️❗`;
+        await conn.sendMessage(from, { text: repoInfo }, { quoted: mek });  
+        }}}
+if (config.ANTI_BAD == "true"){
+        if (!isOwner ) {   
+        if (body.match(`Kariya`)) {
+            
+        if (isMe) return await reply("Link Derect but I cant Delete link")
+        if(groupAdmins.includes(sender)) return
+            let repoInfo = `⚠️❗ *Don't use bad word* ⚠️❗`;
+        await conn.sendMessage(from, { text: repoInfo }, { quoted: mek });  
+        }}}
+if (config.ANTI_BAD == "true"){
+        if (!isOwner ) {   
+        if (body.match(`Hukapn`)) {
+            
+        if (isMe) return await reply("Link Derect but I cant Delete link")
+        if(groupAdmins.includes(sender)) return
+            let repoInfo = `⚠️❗ *Don't use bad word* ⚠️❗`;
+        await conn.sendMessage(from, { text: repoInfo }, { quoted: mek });  
+        }}}
+if (config.ANTI_BAD == "true"){
+        if (!isOwner ) {   
+        if (body.match(`Hukapan`)) {
+            
+        if (isMe) return await reply("Link Derect but I cant Delete link")
+        if(groupAdmins.includes(sender)) return
+            let repoInfo = `⚠️❗ *Don't use bad word* ⚠️❗`;
+        await conn.sendMessage(from, { text: repoInfo }, { quoted: mek });  
+        }}}
+
+const events = require('./command')
+const cmdName = isCmd ? body.slice(1).trim().split(" ")[0].toLowerCase() : false;
+if (isCmd) {
+const cmd = events.commands.find((cmd) => cmd.pattern === (cmdName)) || events.commands.find((cmd) => cmd.alias && cmd.alias.includes(cmdName))
+if (cmd) {
+if (cmd.react) conn.sendMessage(from, { react: { text: cmd.react, key: mek.key }})
+
+try {
+cmd.function(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply});
+} catch (e) {
+console.error("[PLUGIN ERROR] " + e);
+}
+}
+}
+events.commands.map(async(command) => {
+if (body && command.on === "body") {
+command.function(conn, mek, m,{from, l, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply})
+} else if (mek.q && command.on === "text") {
+command.function(conn, mek, m,{from, l, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply})
+} else if (
+(command.on === "image" || command.on === "photo") &&
+mek.type === "imageMessage"
+) {
+command.function(conn, mek, m,{from, l, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply})
+} else if (
+command.on === "sticker" &&
+mek.type === "stickerMessage"
+) {
+command.function(conn, mek, m,{from, l, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply})
+}});
+//============================================================================ 
+})
+}
+app.get("/", (req, res) => {
+res.send("hey I am alive, LOVER-X-MD Is started✅");
+});
+app.listen(port, () => console.log(`Server listening on port http://localhost:${port}`));
+setTimeout(() => {
+connectToWA()
+}, 4000);
