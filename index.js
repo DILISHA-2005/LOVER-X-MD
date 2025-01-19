@@ -75,6 +75,7 @@ console.log("✔️ SQL Database Connected")
 //===================SESSION============================
 if (!fs.existsSync(__dirname + '/auth_info_baileys/creds.json')) {
     if (config.SESSION_ID) {
+      const sessdata = config.SESSION_ID.replace("VAJIRA-MD=", "")
       const filer = File.fromURL(`https://mega.nz/file/${sessdata}`)
       filer.download((err, data) => {
         if (err) throw err
